@@ -1,0 +1,17 @@
+<nav class='section nav-container' *ngIf="navFooterService.visible">
+  <div class='logo'></div>
+  <div class='links'>
+      <div class='login' *ngIf="router.url !== '/landing-page'">
+        <a class='nav-links' routerLink="/recipes-page">Recipes</a>
+      </div>
+      <div class='login' *ngIf="router.url !== '/landing-page'">
+        <a class='nav-links' routerLink="/lists-page">Lists</a>
+      </div>
+      <div class='login' *ngIf="router.url === '/landing-page'">
+        <a class='nav-links' routerLink="/login">Login</a>
+      </div>
+      <div class='login' *ngIf="router.url !== '/landing-page'">
+        <a class='nav-links' (click)="authService.logout()">Logout</a>
+      </div>
+  </div>     
+</nav>

@@ -1,0 +1,48 @@
+<header class='page-header'>
+  <h1>
+    Add Recipe
+  </h1>
+</header>
+<div class='section-container'>
+  <form action='post' method='get' id='recipe-form' class='section recipe-form'>
+    <div class='form-row'>
+      <label for='recipe-name'>Recipe Name</label>
+      <input id='recipe-name' name='recipe-name' type='text' placeholder='Name' required/>
+    </div>
+    <div class='form-row'>
+      <label for='recipe-description'>Description</label>
+      <textarea id='recipe-description' name='recipe-description' placeholder='Describe your recipe here'></textarea>
+    </div>
+    <div class='form-row'>
+      <label for='recipe-directions'>Directions</label>
+      <textarea id='recipe-directions' name='recipe-directions' placeholder='Directions for your recipe'></textarea>
+    </div>
+    <div class='form-row'>
+
+      <div class='ingredient-info form-row'>
+        <label for='ingredient-name'>Name</label>
+        <input id='ingredient-name' name='ingredient-name' type='text' placeholder='Ingredient' />
+      </div>
+      <div class='ingredient-info form-row'>
+        <label for='ingredient-unit'>Unit</label>
+        <input id='ingredient-unit' name='ingredient-unit' type='text' placeholder='Lbs' />
+      </div>
+      <div class='ingredient-info form-row'>
+        <label for='ingredient-quantity'>Quantity</label>
+        <input id='ingredient-quantity' name='ingredient-quantity' type='text' placeholder='1' />
+      </div>
+    </div>
+    <div class='form-row'>
+      <div>
+        <button class='add-ingredient-button' type='button'>Add Ingredient</button>
+      </div>
+    </div>
+    <div class='form-row'>
+      <div class='submit-button-container'>
+        <div>
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,63 @@
+/* List Page */
+
+.list-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lists-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(50,50,93,.1), 0 0px 10px rgba(0,0,0,.07);
+    margin-bottom: 20px;
+}
+
+.list-form {
+    width: 250px;
+    /* margin-top: 20px;
+    padding-top: 20px; */
+    /* border: 1px solid #d3d3d3; */
+    /* border-radius: 4px; */
+}
+
+.list-text textarea {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-top: 20px;
+    min-height: 250px;
+    min-width: 250px;
+    resize: none;
+    box-shadow: 0 10px 30px rgba(50,50,93,.1), 0 0px 10px rgba(0,0,0,.07);
+}
+
+.list-text textarea:focus {
+    outline: none;
+    border: 1px solid #6b9af7;
+}
+
+@media only screen and (min-width: 401px) {
+    .lists-container {
+        width: 350px;
+    }
+
+    .list-form {
+        margin-right: 30px;
+        width: 700px;
+    }
+
+    .list-text textarea {
+        min-height: 250px;
+        min-width: 700px;
+    }
+}

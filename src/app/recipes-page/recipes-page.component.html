@@ -1,0 +1,30 @@
+<header class='page-header'>
+  <h1>
+    Recipes
+  </h1>
+</header>
+<div class='section button-container'>
+  <div class='buttons'>
+    <a class='button' routerLink="/add-recipe-page">Add Recipe</a>
+  </div>
+  <div class='buttons'>
+    <a class='button' href=''>Add List</a>
+  </div>
+</div>
+<div class='section section-container'>
+  <div class='recipe' *ngFor="let recipe of recipes">
+    <div class='item-title'>
+      <p>
+        {{recipe.name}}
+      </p>
+    </div>
+    <div class='actions'>
+      <div class='edit'>
+        <i class="material-icons">mode_edit</i>
+      </div>
+      <div class='delete'>
+        <i class="material-icons">delete</i>
+      </div>
+    </div>
+  </div>
+</div>

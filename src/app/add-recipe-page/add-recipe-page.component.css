@@ -1,0 +1,121 @@
+/* Recipe Form */
+.recipe-form {
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(50,50,93,.1), 0 0px 10px rgba(0,0,0,.07);
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.form-row input, select, textarea, button {
+    font-family:inherit;
+}
+
+.form-row input[type='text'] {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    font-size:inherit;
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px;
+}
+
+.form-row input:focus {
+    outline: none;
+    border: 1px solid #6b9af7;
+}
+.form-row label {
+    margin-bottom: 10px;
+}
+
+.form-row textarea {
+    font-size: inherit;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    min-height: 150px;
+    width:100%;
+    resize: none;
+}
+
+.form-row textarea:focus {
+    outline: none;
+    border: 1px solid #6b9af7;
+}
+
+.ingredient-info {
+    width: 75px;
+    margin-right: 15px;
+}
+
+.form-row button {
+    background-color: #388E3C;
+    height: 30px;
+    width: 140px;
+    font-size: inherit;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.form-row .add-ingredient-button {
+    background-color: #397cca;
+    height: 30px;
+    width: 140px;
+    margin-top: 0px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+
+.form-row button:hover {
+    color: #f3f1f1;
+    transform:translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.form-row button:focus {
+    outline: none;
+    border: 1px solid #6b9af7;
+}
+
+.submit-button-container {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 401px) {
+    .recipe-form {
+        width: 700px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .ingredient-info {
+        width: 75px;
+    }
+
+    .recipe-button {
+        margin-left: 0px;
+    }
+}

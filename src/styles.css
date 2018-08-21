@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+/* Mobile First Development */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 1rem;
+    flex-direction: column;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    flex-direction: column;
+} 
+
+.main-content {
+    min-height: 100vh;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lists {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.item-title {
+    margin-left: 15px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.material-icons {
+    opacity: .7;
+}
+
+.material-icons:hover {
+    transform:scale(1.1);
+    opacity: .5;
+    cursor: pointer;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+    opacity: .8;
+}
+
+.button-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 12vh;
+}
+
+.buttons {
+    background-color: #388E3C;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.buttons:hover {
+    color: #f3f1f1;
+    transform:translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 5px;
+    /* transform: translateY(-1px); */
+}
+
+.button:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 401px) {
+    .button-container {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    .buttons {
+        margin-left: 10px;
+    }
+}
+
